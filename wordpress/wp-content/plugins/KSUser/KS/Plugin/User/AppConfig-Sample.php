@@ -27,14 +27,15 @@ class AppConfig {
 	public $klucz = '';
 
 	/**
-	 * @var string Adres zwrotny, gdzie aplikacja ma się przeładować po autoryzacji, np. http://app.sarmacja.org/
+	 * @var string Adres zwrotny, gdzie aplikacja ma się przeładować po
+	 *     autoryzacji, np. http://app.sarmacja.org/
 	 */
 	public $adres_powrotu = '';
 
 	/**
 	 * @var bool Czy z poziomu aplikacji mają być dostępne przelewy?
 	 */
-	public $przelewy = true;
+	public $przelewy = TRUE;
 
 	/**
 	 * @var int Limit pojedynczego przelewu, w libertach
@@ -53,15 +54,15 @@ class AppConfig {
 
 	public function data() {
 		return [
-			'appId' => $this->id,
-			'appName' => $this->nazwa,
+			'appId'     => $this->id,
+			'appName'   => $this->nazwa,
 			'appSecret' => $this->klucz,
-			'adress' => $this->adres_powrotu,
-			'options' => [
-				'przelew' => $this->przelewy,
+			'adress'    => $this->adres_powrotu,
+			'options'   => [
+				'przelew'            => $this->przelewy,
 				'jednorazowyPrzelew' => $this->przelew_jednorazowy,
-				'dniowyPrzelew' => $this->przelew_doba,
-				'powiadomienie' => $this->powiadomienia,
+				'dniowyPrzelew'      => $this->przelew_doba,
+				'powiadomienie'      => $this->powiadomienia,
 			],
 		];
 	}

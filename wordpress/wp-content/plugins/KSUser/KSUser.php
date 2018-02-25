@@ -9,9 +9,10 @@ Author URI: https://lukasznowicki.info/
 License: MIT
 License URI: https://raw.githubusercontent.com/lukasznowicki/sarmacja-integracja/master/LICENSE
 */
+
 namespace KS\Plugin\User;
 
-defined('ABSPATH') or exit;
+defined( 'ABSPATH' ) or exit;
 
 define( __NAMESPACE__ . '\PLUGIN_CLASS_DIR', trailingslashit( __DIR__ ) . 'KS' . \DIRECTORY_SEPARATOR . 'Plugin' . \DIRECTORY_SEPARATOR . 'User' . \DIRECTORY_SEPARATOR );
 
