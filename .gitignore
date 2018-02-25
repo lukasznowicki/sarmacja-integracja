@@ -10,7 +10,8 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
-Integracja.php
+/wordpress/wp-content/plugins/KSUser/KS/Plugin/User/Integracja.php
+/wordpress/wp-content/plugins/KSUser/KS/Plugin/User/AppConfig.php
 
 .idea/*.*
 
